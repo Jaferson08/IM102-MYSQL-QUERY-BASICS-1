@@ -1,2 +1,3 @@
-Select * from categories;
-Select CategoryName, Description from categories where CategoryName = 'Seafood';
+SELECT products.ProductName, categories.CategoryName
+FROM products
+INNER JOIN categories ON products.CategoryID = categories.CategoryID where categories.CategoryID= 8;
